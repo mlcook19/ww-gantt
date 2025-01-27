@@ -47,15 +47,21 @@ export default {
               },
               startDate: {
                 label: { en: "Start Date" },
-                type: "Text",
-                defaultValue: new Date().toISOString().split('T')[0],
-                bindable: true
+                type: "Dropzone",
+                options: {
+                  type: "Date",
+                  format: "YYYY-MM-DD"
+                },
+                defaultValue: new Date().toISOString().split('T')[0]
               },
               endDate: {
                 label: { en: "End Date" },
-                type: "Text",
-                defaultValue: new Date().toISOString().split('T')[0],
-                bindable: true
+                type: "Dropzone",
+                options: {
+                  type: "Date",
+                  format: "YYYY-MM-DD"
+                },
+                defaultValue: new Date().toISOString().split('T')[0]
               },
               color: {
                 label: { en: "Color" },
