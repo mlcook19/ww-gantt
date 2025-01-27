@@ -7,11 +7,23 @@ export default {
   properties: {
     headerText: {
       hidden: true,
-      defaultValue: { isWwObject: true, type: 'ww-text' }
+      defaultValue: { 
+        isWwObject: true, 
+        type: 'ww-text',
+        content: {
+          text: 'Tasks'
+        }
+      }
     },
     dateText: {
       hidden: true,
-      defaultValue: { isWwObject: true, type: 'ww-text' }
+      defaultValue: { 
+        isWwObject: true, 
+        type: 'ww-text',
+        content: {
+          text: ''
+        }
+      }
     },
     tasks: {
       label: {

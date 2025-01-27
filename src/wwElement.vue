@@ -45,6 +45,8 @@
 export default {
   props: {
     content: { type: Object, required: true },
+    headerText: { type: Object, required: true },
+    dateText: { type: Object, required: true }
   },
   computed: {
     dateHeaders() {
