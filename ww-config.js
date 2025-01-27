@@ -5,6 +5,14 @@ export default {
     }
   },
   properties: {
+    headerText: {
+      hidden: true,
+      defaultValue: { isWwObject: true, type: 'ww-text' }
+    },
+    dateText: {
+      hidden: true,
+      defaultValue: { isWwObject: true, type: 'ww-text' }
+    },
     tasks: {
       label: {
         en: "Tasks",
@@ -15,6 +23,10 @@ export default {
           type: "Object",
           options: {
             item: {
+              nameElement: {
+                hidden: true,
+                defaultValue: { isWwObject: true, type: 'ww-text' }
+              },
               name: {
                 label: { en: "Task Name" },
                 type: "Text",
@@ -44,13 +56,15 @@ export default {
           name: "Task 1",
           startDate: "2024-03-01",
           endDate: "2024-03-05",
-          color: "#4A90E2"
+          color: "#4A90E2",
+          nameElement: { isWwObject: true, type: 'ww-text' }
         },
         {
           name: "Task 2",
           startDate: "2024-03-03",
           endDate: "2024-03-08",
-          color: "#50E3C2"
+          color: "#50E3C2",
+          nameElement: { isWwObject: true, type: 'ww-text' }
         }
       ]
     }

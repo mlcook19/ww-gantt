@@ -1,17 +1,28 @@
 <template>
   <div class="ww-gantt-chart">
     <div class="gantt-header">
-      <div class="task-header">Tasks</div>
+      <div class="task-header">
+        <wwElement
+          v-bind="headerText"
+          :ww-props="{ text: 'Tasks' }"
+        />
+      </div>
       <div class="timeline-header" ref="timelineHeader">
         <div v-for="(date, index) in dateHeaders" :key="index" class="date-column">
-          {{ date }}
+          <wwElement
+            v-bind="dateText"
+            :ww-props="{ text: date }"
+          />
         </div>
       </div>
     </div>
     <div class="gantt-body">
       <div class="tasks-list">
         <div v-for="(task, index) in content.tasks" :key="index" class="task-row">
-          {{ task.name }}
+          <wwElement
+            v-bind="content.tasks[index].nameElement"
+            :ww-props="{ text: task.name }"
+          />
         </div>
       </div>
       <div class="timeline-body" ref="timelineBody">

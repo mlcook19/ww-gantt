@@ -1,0 +1,24 @@
+{
+  "name": "@weweb/ww-gantt-chart",
+  "version": "1.0.0",
+  "description": "Gantt Chart component for WeWeb",
+  "main": "src/wwElement.vue",
+  "scripts": {
+    "build": "weweb build",
+    "serve": "weweb serve"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@weweb/cli": "latest"
+  },
+  "webComponents": {
+    "type": "element"
+  },
+  "author": "mlcook19",
+  "publishConfig": {
+    "access": "public"
+  }
+} 
