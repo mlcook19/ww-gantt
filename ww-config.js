@@ -42,22 +42,26 @@ export default {
               name: {
                 label: { en: "Task Name" },
                 type: "Text",
-                defaultValue: "New Task"
+                defaultValue: "New Task",
+                bindable: true
               },
               startDate: {
                 label: { en: "Start Date" },
                 type: "Text",
-                defaultValue: new Date().toISOString().split('T')[0]
+                defaultValue: new Date().toISOString().split('T')[0],
+                bindable: true
               },
               endDate: {
                 label: { en: "End Date" },
                 type: "Text",
-                defaultValue: new Date().toISOString().split('T')[0]
+                defaultValue: new Date().toISOString().split('T')[0],
+                bindable: true
               },
               color: {
                 label: { en: "Color" },
                 type: "Color",
-                defaultValue: "#4A90E2"
+                defaultValue: "#4A90E2",
+                bindable: true
               }
             }
           }
